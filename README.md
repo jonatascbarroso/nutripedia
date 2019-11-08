@@ -1,2 +1,5 @@
-# nutripedia
-Catálogo nutricional de alimentos
+# NutriPedia
+
+![NutriPedia](food-icon.png)
+
+Nutritional Food Catalog
