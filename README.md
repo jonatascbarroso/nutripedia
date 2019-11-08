@@ -1,5 +1,3 @@
-# NutriPedia
-
-![NutriPedia](food-icon.png)
+# NutriPedia ![NutriPedia](food-icon.png)
 
 Nutritional Food Catalog
