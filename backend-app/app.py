@@ -6,10 +6,10 @@ import urllib.request, json
 hostName = ""
 hostPort = 8080
 datasourceUrl = 'https://spreadsheets.google.com/feeds/list/'
-datasourceSufix = '/public/full?alt=json'
+datasourceSufix = '/public/values?alt=json'
 sheetId = '1_LbaCF_CkBsDkxS9KdWOv6JZKkY7nmyXRyorixGVMTs'
 sheedPages = {
-	'labels': '1',
+	'metadata': '1',
 	'data': '2'
 }
 
@@ -22,22 +22,35 @@ def get_url_content(url):
 
 def get_data(url):
 	content = get_url_content(url)
-	with content['feed']['entry'] as food:
-		# dont
-	return content
+	collection = content['feed']['entry']
+	length = len(collection)
+	response = {'data': {}}
+	for index in range(length):
+		item = collection[index]
+		food = {
+			'name': 		item['gsx$name']['$t'],
+			'image': 		item['gsx$image']['$t'],
+			'properties':   item['gsx$properties']['$t'],
+			'benefits':     item['gsx$benefits']['$t'],
+			'composition':  item['gsx$composition']['$t'],
+			'action':       item['gsx$action']['$t'],
+			'nutrients':    item['gsx$nutrients']['$t'],
+			'dailyPortion': item['gsx$daily-portion']['$t']
+		}
+		response['data'].update({index: food})
+	return response
 
-def get_labels(url):
+def get_metadata(url):
 	content = get_url_content(url)
-	lastUpdate = content['feed']['updated']['$t']
-	labels = content['feed']['entry'][0]
+	metadata = content['feed']['entry'][0]
 	response = {
-		'lastUpdate':   lastUpdate,
-		'properties':   labels['gsx$properties']['$t'],
-		'benefits':     labels['gsx$benefits']['$t'],
-		'composition':  labels['gsx$composition']['$t'],
-		'action':       labels['gsx$action']['$t'],
-		'nutrients':    labels['gsx$nutrients']['$t'],
-		'dailyPortion': labels['gsx$daily-portion']['$t']
+		'lastUpdate':   metadata['gsx$updated']['$t'],
+		'properties':   metadata['gsx$properties']['$t'],
+		'benefits':     metadata['gsx$benefits']['$t'],
+		'composition':  metadata['gsx$composition']['$t'],
+		'action':       metadata['gsx$action']['$t'],
+		'nutrients':    metadata['gsx$nutrients']['$t'],
+		'dailyPortion': metadata['gsx$daily-portion']['$t']
 	}
 	return response
 
@@ -49,8 +62,8 @@ class MyServer(BaseHTTPRequestHandler):
 			url = get_datasource_url('data')
 			content = get_data(url)
 		else:
-			url = get_datasource_url('labels')
-			content = get_labels(url)
+			url = get_datasource_url('metadata')
+			content = get_metadata(url)
 		
 		response = json.dumps(content)
 
