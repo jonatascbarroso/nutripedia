@@ -1,22 +1,21 @@
 import React, { Component } from 'react';
-import MyCard from './MyCard';
-import { AppBar, Toolbar, Grid, Avatar, Typography, InputBase } from '@material-ui/core';
-import SearchIcon from '@material-ui/icons/Search';
+import FoodCard from './FoodCard';
+import FoodPicture from './FoodPicture';
+import { GridList } from '@material-ui/core';
+import ElevateAppBar from './ElevateAppBar';
 
 class App extends Component {
 
-  apiUrl = 'http://192.168.1.16:8080/';
+  apiUrl = 'http://localhost:8080/';
   metadataUrl = this.apiUrl + '';
   dataUrl = this.apiUrl + '?data';
   localStoredNutripediaDataKey = '@nutripedia/data';
   localStoredNutripediaMetadataKey = '@nutripedia/metadata';
 
-  createCard(data) {
+  createFoodCard(food) {
     let labels = JSON.parse(localStorage.getItem(this.localStoredNutripediaMetadataKey));
     return (
-      <Grid container item xs={12} sm={4}>
-        <MyCard labels={labels} data={data} />
-      </Grid>
+      <FoodCard labels={labels} data={food} />
     );
   }
 
@@ -53,33 +52,19 @@ class App extends Component {
     if (collection == null ||
         typeof collection === 'undefined' ||
         typeof collection.data === 'undefined') {
-      content = (<p>Data not found.</p>);
+      content = (<p>Food not found.</p>);
     } else {
       Object.values(collection.data)
       .forEach(item => {
-        content.push(this.createCard(item));
+        content.push(<FoodPicture name={item.name} image={item.image} />);
       })
     }
     return (
       <div>
-        <AppBar position='static'>
-          <Toolbar>
-            <Avatar src='https://raw.githubusercontent.com/jonatascbarroso/nutripedia/master/food-icon.png' />
-            <Typography className='App-title' noWrap>Nutripedia</Typography>
-            <div className='App-search'>
-              <div className='App-searchIcon'>
-                <SearchIcon />
-              </div>
-              <InputBase placeholder='Pesquisar...' classes={{
-                root: 'App-inputRoot',
-                input: 'App-inputInput',
-              }} inputProps={{'aria-label': 'search'}} />
-            </div>
-          </Toolbar>
-        </AppBar>
-        <Grid container>
+        <ElevateAppBar />
+        <GridList className='gridList'>
           {content}
-        </Grid>
+        </GridList>
       </div>
     );
   }

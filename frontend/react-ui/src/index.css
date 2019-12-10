@@ -11,3 +11,20 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.gridList {
+  text-align: center;
+  align-content: center;
+}
+
+.foodPictureFrame {
+  padding: 1em;
+}
+
+.foodImage {
+  max-width: 20em;
+}
+
+.foodIcon {
+  color: rgba(255, 255, 255, 0.54);
+}

@@ -28,9 +28,42 @@ def offline_data() :
 		'feed': {
 			'entry': {
 				0: {
-					'gsx$updated': { '$t': '12/11/2019 12:13:14' },
-					'gsx$name': { '$t': 'alho' },
-					'gsx$image': { '$t': 'image' },
+					'gsx$updated': { '$t': '13/11/2019 12:13:14' },
+					'gsx$name': { '$t': 'food-0' },
+					'gsx$image': { '$t': 'http://localhost:3000/logo512.png' },
+					'gsx$properties': { '$t': 'properties' },
+					'gsx$benefits': { '$t': 'benefits' },
+					'gsx$composition': { '$t': 'composition' },
+					'gsx$action': { '$t': 'action' },
+					'gsx$nutrients': { '$t': 'nutrients' },
+					'gsx$daily-portion': { '$t': 'daily-portion' }
+				},
+				1: {
+					'gsx$updated': { '$t': '15/11/2019 12:13:14' },
+					'gsx$name': { '$t': 'food-1' },
+					'gsx$image': { '$t': 'http://localhost:3000/logo512.png' },
+					'gsx$properties': { '$t': 'properties' },
+					'gsx$benefits': { '$t': 'benefits' },
+					'gsx$composition': { '$t': 'composition' },
+					'gsx$action': { '$t': 'action' },
+					'gsx$nutrients': { '$t': 'nutrients' },
+					'gsx$daily-portion': { '$t': 'daily-portion' }
+				},
+				2: {
+					'gsx$updated': { '$t': '15/11/2019 12:13:14' },
+					'gsx$name': { '$t': 'food-2' },
+					'gsx$image': { '$t': 'http://localhost:3000/logo512.png' },
+					'gsx$properties': { '$t': 'properties' },
+					'gsx$benefits': { '$t': 'benefits' },
+					'gsx$composition': { '$t': 'composition' },
+					'gsx$action': { '$t': 'action' },
+					'gsx$nutrients': { '$t': 'nutrients' },
+					'gsx$daily-portion': { '$t': 'daily-portion' }
+				},
+				3: {
+					'gsx$updated': { '$t': '15/11/2019 12:13:14' },
+					'gsx$name': { '$t': 'food-3' },
+					'gsx$image': { '$t': 'http://localhost:3000/logo512.png' },
 					'gsx$properties': { '$t': 'properties' },
 					'gsx$benefits': { '$t': 'benefits' },
 					'gsx$composition': { '$t': 'composition' },

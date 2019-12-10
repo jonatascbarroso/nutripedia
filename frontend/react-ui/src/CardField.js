@@ -1,7 +1,7 @@
 import React from 'react';
 import Typography from '@material-ui/core/Typography';
 
-class MyField extends React.Component {
+class CardField extends React.Component {
 
   constructor(props) {
     super(props);
@@ -21,4 +21,4 @@ class MyField extends React.Component {
   }
 }
 
-export default MyField;
+export default CardField;
