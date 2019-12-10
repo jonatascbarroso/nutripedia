@@ -17,8 +17,31 @@ def get_datasource_url(collection):
 	return datasourceUrl + sheetId + '/' + sheedPages[collection] + datasourceSufix
 
 def get_url_content(url):
-	with urllib.request.urlopen(url) as urlopen:
-		return json.loads(urlopen.read().decode())
+	try:
+		with urllib.request.urlopen(url) as urlopen:
+			return json.loads(urlopen.read().decode())
+	except:
+		return offline_data()
+
+def offline_data() :
+	data = {
+		'feed': {
+			'entry': {
+				0: {
+					'gsx$updated': { '$t': '12/11/2019 12:13:14' },
+					'gsx$name': { '$t': 'alho' },
+					'gsx$image': { '$t': 'image' },
+					'gsx$properties': { '$t': 'properties' },
+					'gsx$benefits': { '$t': 'benefits' },
+					'gsx$composition': { '$t': 'composition' },
+					'gsx$action': { '$t': 'action' },
+					'gsx$nutrients': { '$t': 'nutrients' },
+					'gsx$daily-portion': { '$t': 'daily-portion' }
+				}
+			} 
+		}
+	}
+	return data
 
 def get_data(url):
 	content = get_url_content(url)
