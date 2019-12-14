@@ -84,6 +84,7 @@ def get_data(url):
 	for index in range(length):
 		item = collection[index]
 		food = {
+			'id':           index,
 			'name': 		item['gsx$name']['$t'],
 			'image': 		item['gsx$image']['$t'],
 			'properties':   item['gsx$properties']['$t'],

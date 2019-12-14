@@ -13,16 +13,7 @@ code {
 }
 
 .gridList {
-  text-align: center;
-  align-content: center;
-}
-
-.foodPictureFrame {
-  padding: 1em;
-}
-
-.foodImage {
-  max-width: 20em;
+  justify-content: center;
 }
 
 .foodIcon {
