@@ -12,10 +12,50 @@ code {
     monospace;
 }
 
-.gridList {
+.cardList {
   justify-content: center;
+  margin-top: 70px;
+}
+
+.foodDialogContainer {
+  margin-top: 70px;
+  padding: 1em;
+}
+
+.foodCard {
+  cursor: pointer;
 }
 
 .foodIcon {
-  color: rgba(255, 255, 255, 0.54);
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.propertyLabel {
+  color: purple;
+  font-weight: bold !important ;
+  padding: 10px;
+}
+
+.propertyValue {
+  padding: 10px;
+}
+
+.appTitle {
+  font-size: xx-large !important;
+  color: bisque;
+}
+
+.toolbar {
+  background-color: purple;
+}
+
+.searchBox {
+  border-radius: 5px;
+  padding: 3px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.inputBase {
+  margin-left: 5px;
+  color: bisque !important;
 }

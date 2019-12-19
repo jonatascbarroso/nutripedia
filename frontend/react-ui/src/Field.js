@@ -1,5 +1,5 @@
 import React from 'react';
-import Typography from '@material-ui/core/Typography';
+import { Typography, Box, Divider } from '@material-ui/core';
 
 class Field extends React.Component {
 
@@ -13,10 +13,13 @@ class Field extends React.Component {
 
   render() {
     return (
-      <div>
-        <Typography component='p'>{this.props.label}</Typography>
-        <Typography color='textSecondary' component='p'>{this.props.value}</Typography>
-      </div>
+      <Box>
+        <Divider />
+        <Typography component="h3" className="propertyLabel">
+          {this.props.label}
+        </Typography>
+        <Typography component="p" className="propertyValue">{this.props.value}</Typography>
+      </Box>
     );
   }
 }

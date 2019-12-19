@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { GridList, Container, IconButton, Avatar, 
-  Slide, Dialog, AppBar, Typography, Box, InputBase,
+import { GridList, Container, IconButton, Avatar, Paper,
+  Dialog, AppBar, Typography, Box, InputBase,
   GridListTile, GridListTileBar, Toolbar } from '@material-ui/core';
 import InfoIcon from '@material-ui/icons/Info';
 import CloseIcon from '@material-ui/icons/Close';
@@ -13,90 +13,107 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      labels: null,
-      collection: null,
-      dialogOpen: false,
+      openedDialog: false,
       selectedFood: null,
     };
   }
+  
+  getLocalStoredMetadata() {
+    return JSON.parse(localStorage.getItem(Config.localStoredNutripediaMetadataKey));
+  }
 
-  loadStorage() {
+  getLocalStoredData() {
+    return JSON.parse(localStorage.getItem(Config.localStoredNutripediaDataKey));
+  }
+
+  setLocalStoredData(data) {
+    localStorage.setItem(Config.localStoredNutripediaDataKey, JSON.stringify(data));
+  }
+  
+  setLocalStoredMetadata(metadata) {
+    localStorage.setItem(Config.localStoredNutripediaMetadataKey, JSON.stringify(metadata));
+  }
+
+  updateLocalStorage(metadata, data) {
+    this.setLocalStoredData(data);
+    this.setLocalStoredMetadata(metadata);
+  }
+
+  updateLocalStorageWithRemoteData() {
     fetch(Config.metadataUrl)
     .then(response => response.json())
     .then(remoteMetadata => {
-      let storedMetadata = localStorage.getItem(Config.localStoredNutripediaMetadataKey);
+      let storedMetadata = this.getLocalStoredMetadata();
       if (storedMetadata == null ||
           typeof storedMetadata === 'undefined' ||
-          typeof storedMetadata.lastUpdate === 'undefined' ||
-          typeof remoteMetadata.lastUpdate === 'undefined' ||
           (new Date(storedMetadata.lastUpdate)) < (new Date(remoteMetadata.lastUpdate))) {
         fetch(Config.dataUrl)
         .then(response => response.json())
-        .then(remoteData => {
-          this.setState({collection: remoteData});
-          localStorage.setItem(Config.localStoredNutripediaDataKey, JSON.stringify(remoteData));
-          this.setState({labels: remoteMetadata});
-          localStorage.setItem(Config.localStoredNutripediaMetadataKey, JSON.stringify(remoteMetadata));
-        })
+        .then(remoteData => this.updateLocalStorage(remoteMetadata, remoteData))
         .catch(error => {
-          console.error('Failed retrieving data', error);
+          console.error('Failed retrieving data.', error);
         });
       }
     })
     .catch(error => {
-      console.error('Failed retrieving metadata', error);
+      console.error('Failed retrieving metadata.', error);
     });
   }
 
-  foodPicture(index, name, image) {
-    const openFood = () => {
-      this.setState({selectedFood: this.state.collection.data[index]});
-      this.setState({dialogOpen: true});
+  foodCard(index, name, image) {
+    const openDialog = () => {
+      const food = this.getLocalStoredData().data[index];
+      this.setState({selectedFood: food});
+      this.setState({openedDialog: true});
     }
     return (
-      <GridListTile key={'food'+index}>
+      <GridListTile key={'food'+index} className="foodCard"
+        onClick={openDialog}>
         <img src={image} alt={name} />
         <GridListTileBar title={name} actionIcon={
-          <IconButton onClick={openFood}>
+          <IconButton onClick={openDialog}>
             <InfoIcon className='foodIcon' />
           </IconButton>
-        }/>  
-    
-
+        }/>
       </GridListTile>
     );
   }
 
   foodDialog() {
-    const Transition = React.forwardRef(function Transition(props, ref) {
-      return <Slide direction="up" ref={ref} {...props} />;
-    });
-    const handleClose = () => {
+    const closeDialog = () => {
       this.setState({selectedFood: null});
-      this.setState({dialogOpen: false});
+      this.setState({openedDialog: false});
     }
-    const labels = this.state.labels;
+    const labels = this.getLocalStoredMetadata();
     const food = this.state.selectedFood;
     let content = [];
     if (food != null) {
       content = (
-        <Dialog open={this.state.dialogOpen} onClose={handleClose} TransitionComponent={Transition}>
+        <Dialog fullScreen
+          open={this.state.openedDialog} onClose={closeDialog}>
           <AppBar>
-            <Toolbar>
-              <IconButton edge="start" color="inherit" onClick={handleClose}>
+            <Toolbar className="toolbar">
+              <IconButton edge="start" color="inherit" onClick={closeDialog}>
                 <CloseIcon />
               </IconButton>
-              <Typography>{food.name}</Typography>
+              <Typography component="h2" noWrap className="appTitle">
+                {food.name}
+              </Typography>
             </Toolbar>
           </AppBar>
-          <Container>
+          <Paper className="foodDialogContainer">
+            <GridList cellHeight={'auto'} cols={1}>
+              <GridListTile>
+                <img src={food.image} alt={food.name} />
+              </GridListTile>
+            </GridList>
             <Field label={labels.properties} value={food.properties} />
             <Field label={labels.benefits} value={food.benefits} />
             <Field label={labels.composition} value={food.composition} />
             <Field label={labels.action} value={food.action} />
             <Field label={labels.nutrients} value={food.nutrients} />
             <Field label={labels.dailyPortion} value={food.dailyPortion} />
-          </Container>
+          </Paper>
         </Dialog>
       );
     }
@@ -105,9 +122,9 @@ class App extends Component {
 
   searchField() {
     return (
-      <Box>
+      <Box className="searchBox">
         <SearchIcon />
-        <InputBase placeholder='Pesquisar...' />
+        <InputBase placeholder='Pesquisar...' className="inputBase" />
       </Box>
     );
   }
@@ -115,17 +132,18 @@ class App extends Component {
   appBar() {
     return (
       <AppBar position='static'>
-        <Toolbar>
+        <Toolbar className="toolbar">
           <Avatar src='./food-icon.png' />
-          <Typography noWrap>Nutripedia</Typography>
+          <Typography noWrap component="h1" className="appTitle">Nutripedia</Typography>
+          
         </Toolbar>
       </AppBar>
     );
   }
 
   render() {
-    this.loadStorage();
-    const collection = this.state.collection;
+    this.updateLocalStorageWithRemoteData();
+    const collection = this.getLocalStoredData();
     let content = [];
     if (collection == null ||
         typeof collection === 'undefined' ||
@@ -133,13 +151,13 @@ class App extends Component {
       content = <Typography>Carregando...</Typography>;
     } else {
       content = Object.values(collection.data).map(item =>
-        this.foodPicture(item.id, item.name, item.image)
+        this.foodCard(item.id, item.name, item.image)
       );
     }
     return (
       <Container maxWidth="md">
         {this.appBar()}
-        <GridList cols={3} className="gridList">
+        <GridList cols={3} className="cardList">
           {content}
         </GridList>
         {this.foodDialog()}
