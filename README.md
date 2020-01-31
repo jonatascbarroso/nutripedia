@@ -6,7 +6,7 @@
 
 ## Development Methodology
 
-
+To construct this application was used the Agile Software Development Methodology, a set of principles and practices based on the values expressed in the [Agile Manifesto](https://agilemanifesto.org/). The system structure was divided into layers to organize it and made the development easier.
 
 ## Technology
 
