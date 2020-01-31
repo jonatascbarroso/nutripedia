@@ -4,6 +4,10 @@
 
 **Nutripedia** is a nutritional catalog with food information, like properties, benefits, composition, action, and nutrients.
 
+## Development Methodology
+
+
+
 ## Technology
 
 The system consists of three layers:
@@ -15,4 +19,6 @@ The system consists of three layers:
 
 ![Architecture Diagram](architecture-diagram.png)
 
+The sample application is available on [Heroku](https://www.heroku.com/), a platform as a service (PaaS) that enables developers to build, run, and operate applications entirely in the cloud.
 
+Access the [sample application here](http://nutripedia.herokuapp.com/).
