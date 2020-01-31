@@ -1,9 +1,41 @@
-<mxfile host="www.draw.io" modified="2020-01-31T11:39:43.881Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.117 Safari/537.36" etag="RSdmBXJNOI0PhxlisN82" version="12.6.2" type="github">
+<mxfile host="www.draw.io" modified="2020-01-31T17:18:01.829Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.117 Safari/537.36" etag="Bv8CRKCR28ZWACEz6c2-" version="12.6.2" type="github">
   <diagram id="UUcm2tSYFJlV1EVi0rPY" name="Page-1">
-    <mxGraphModel dx="1422" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1422" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="583" math="0" shadow="0">
       <root>
         <mxCell id="0"/>
         <mxCell id="1" parent="0"/>
+        <mxCell id="FNS54GikTaBBTmz5pJ7u-31" value="" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;fontFamily=Tahoma;fontSize=14;arcSize=3;" vertex="1" parent="1">
+          <mxGeometry x="40" y="70" width="740" height="450" as="geometry"/>
+        </mxCell>
+        <mxCell id="FNS54GikTaBBTmz5pJ7u-30" value="Food Data and&lt;br&gt;Labels" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;fontFamily=Tahoma;fontSize=14;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#10739e;fillColor=#b1ddf0;exitX=0.995;exitY=0.63;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="FNS54GikTaBBTmz5pJ7u-4" target="FNS54GikTaBBTmz5pJ7u-5">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="588" y="256" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FNS54GikTaBBTmz5pJ7u-4" value="Backend App and Rest API&lt;br style=&quot;font-size: 16px&quot;&gt;(Python)" style="html=1;dashed=0;whitespace=wrap;fillColor=#2875E2;strokeColor=#ffffff;points=[[0.005,0.63,0],[0.1,0.2,0],[0.9,0.2,0],[0.5,0,0],[0.995,0.63,0],[0.72,0.99,0],[0.5,1,0],[0.28,0.99,0]];shape=mxgraph.kubernetes.icon;prIcon=api;labelPosition=center;verticalLabelPosition=top;align=center;verticalAlign=bottom;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="395" y="156" width="100" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="FNS54GikTaBBTmz5pJ7u-5" value="Database&lt;br style=&quot;font-size: 16px;&quot;&gt;(Google Sheets)" style="aspect=fixed;perimeter=ellipsePerimeter;html=1;align=center;shadow=0;dashed=0;spacingTop=3;image;image=img/lib/active_directory/database.svg;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="615" y="246" width="135.14" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="FNS54GikTaBBTmz5pJ7u-19" value="Frontend App&lt;br style=&quot;font-size: 16px;&quot;&gt;(ReactJS)" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=16;image=img/lib/mscae/CustomDomain.svg;" vertex="1" parent="1">
+          <mxGeometry x="75" y="286" width="119.05" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="FNS54GikTaBBTmz5pJ7u-20" value="Picture Storage&lt;br style=&quot;font-size: 16px;&quot;&gt;(Free Online Repositories)" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn4.iconfinder.com/data/icons/twitter-28/512/159_Twitter_Image_Picture-128.png;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="395" y="326" width="100" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="FNS54GikTaBBTmz5pJ7u-25" value="URL: http://api:8080&lt;br&gt;Metadata: $URL + &quot;/&quot;&lt;br style=&quot;font-size: 14px&quot;&gt;Food Info: $URL + &quot;/?data&quot;" style="endArrow=classic;html=1;fontFamily=Tahoma;fontSize=14;entryX=0.005;entryY=0.63;entryDx=0;entryDy=0;entryPerimeter=0;strokeWidth=2;fillColor=#b1ddf0;strokeColor=#10739e;" edge="1" parent="1" source="FNS54GikTaBBTmz5pJ7u-19" target="FNS54GikTaBBTmz5pJ7u-4">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="155" y="506" as="sourcePoint"/>
+            <mxPoint x="155" y="646" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FNS54GikTaBBTmz5pJ7u-27" value="Food Image" style="endArrow=classic;html=1;fontFamily=Tahoma;fontSize=14;strokeWidth=2;fillColor=#b1ddf0;strokeColor=#10739e;" edge="1" parent="1" source="FNS54GikTaBBTmz5pJ7u-19" target="FNS54GikTaBBTmz5pJ7u-20">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="494.5" y="299" as="sourcePoint"/>
+            <mxPoint x="655.1997009458439" y="289.8412889811581" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
