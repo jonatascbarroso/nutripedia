@@ -1,1 +1,42 @@
-<mxfile host="www.draw.io" modified="2020-01-31T17:18:56.704Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.117 Safari/537.36" etag="GxxvyZfUXWqBvAuatMPf" version="12.6.2" type="github"><diagram id="UUcm2tSYFJlV1EVi0rPY" name="Page-1">1Vhbc+o2EP41zLQP8fgmsB8xhDRnclompNP2KSNsYauxLVcWAc6v70qWwTdykpSkLcOAtbrvfvvtrkfOLNvfcFwkX1lE0pFtRvuRMx/ZtuXa9kh+zehQSSa+WwliTiM96CRY0W9EC00t3dKIlK2BgrFU0KItDFmek1C0ZJhztmsP27C0vWuBY9ITrEKc9qW/0UgkldSzJyf5T4TGid4ZeU7VkeF6rL5ImeCI7Roi53rkzDhjonrK9jOSSt3VaqnmLc70Hs/FSS5eM2Hx8wq5N/TpAQfBQ/YNFV8m2ytHL/OM062+sD6tONQa4GybR0SuYo2cYJdQQVYFDmXvDmwOskRkqe4uBWdPR03BJYMNy8UCZzSVAHjACcuwlmpjWy60MQ9104FW/271OQkXZN8Q6bveEJYRwQ8wRPe6Wu017HRzd7LhpB6SNOznIi3EGjfxceWTbuFBq/ctqjZ7ql4wFoFkjgWWO+bQGKdwkGDN4SmWT3d4TdLyBZuYMIhxkbCY5Ti9Y6zQlviTCHHQOsVbwS5jJzAIP/yu91WNP2TDQHVzvm92zg+6Ve03Yynj6gaOZU4cn8gdaJo25GsrijZq/p4KtZHh+0i3q73Gjm6e9pKNQ6OxJJyC2QjXsrOAKtmWh+QFs2m2EpjHRLwwDlXjSNSikz48OUmxoM9tdhkCm566ZBSOfIQ18rwWrm00bi9RHVTP6kD2eIz3o9jtgTjA4ROR0DWnRVHD2LwnpTz1dHnbxHQDwuO/tpL5FMCuSoWwKQywxsX+1Fl7wQ/LAyA8/7HnBw1ER7hMjh6hWKpss1QHaLY3Qdf2EDQ36gM9hdSi0isK4GsapglmnikEwt8IweiZ6rCU2O5I/UGpWqI70j+z8ETNhv6BRayOzPY6Y+EL10twIbWQ7WMZoY2n7ZrwHHyjNCgETXlNfqse5rig0Ewl5SxZSQVV0hB8RjpSIMmXQmS86wwQknMCnNJ4cPhUd6yZECzrcMr4Mmzv+KjlFlbtFg2+t8wBvj8KL873qOcpkufXuCTv8AjlCl2nuGEshrm2uUoIEWXfO3BZVCnRhu6lawRFgxbhCpBDkQZTNuNDz5rH9MXs+pp0M5rHDyrySGqmmcqp6v85zWLQYErX8ItDSX6PEeVwMibVvIi0WozyOf4YdIytNjpsdwAdDjIs9zMBYvn9hIDD5Rtkehmc3BPQ+pfVK/DRAECb++ZDkKjt3LXYkN2zMsQA1cVsWwIJzCG5oLk2+AUMPOnY1xuwr+UbJvpM+9r9hG9JQ7HlymUB/FJLFzLxghO56i95SnOiwm8h+ZlxSgZ4oQ4JtQEbZu+SdsXt55j/SOkqZshMIFaZ6VAwVZtNa8RJ4ujBrwZOIoSs7qZS//YijHJXhaoNhZyXGyHsWLEG/Ek5pMcLsaMCUHklY+ACWdJ0FvIfHyrx461c+VGr/8qyPaPIP4hsuqHIsf/1UGT3Y9Gv93cVpqSuj6pWCcDUMz2zX4l8JQIrpatpI9uVS8iHQP2eILlo4fMt8HaHcj9dJN3mG/aKrR0NjJOsg31g16l8LSCJLMVlScO2A7y1DFI5YasUqsqTF2oh1epWKAMF2ZnC6Hwp9f4qp45F3y1z3FeWOQ2wowGs17J/WA1ZqO1ryOxUQ9XFe9XQdxcau59bVtWvk/ovBxRzfRCK/yeYqwPpfwR0ru8anXzD998HuzGCpNP3J6bpu8hzHb+TxviG50Kw8nzPspDXOem7ITmSeWb92rEafnp361z/DQ==</diagram></mxfile>
+<mxfile host="www.draw.io" modified="2020-02-04T13:17:11.148Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.117 Safari/537.36" etag="OTIUMiwDwoujw9UXQCiR" version="12.6.5" type="github">
+  <diagram id="UUcm2tSYFJlV1EVi0rPY" name="Page-1">
+    <mxGraphModel dx="1422" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="583" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="FNS54GikTaBBTmz5pJ7u-31" value="" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;fontFamily=Tahoma;fontSize=14;arcSize=3;" parent="1" vertex="1">
+          <mxGeometry x="40" y="70" width="740" height="450" as="geometry"/>
+        </mxCell>
+        <mxCell id="FNS54GikTaBBTmz5pJ7u-30" value="Food Data and&lt;br&gt;Labels" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;fontFamily=Tahoma;fontSize=14;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#10739e;fillColor=#b1ddf0;exitX=0.995;exitY=0.63;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="FNS54GikTaBBTmz5pJ7u-4" target="FNS54GikTaBBTmz5pJ7u-5" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="588" y="256" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FNS54GikTaBBTmz5pJ7u-4" value="Backend App and Rest API" style="html=1;dashed=0;whitespace=wrap;fillColor=#2875E2;strokeColor=#ffffff;points=[[0.005,0.63,0],[0.1,0.2,0],[0.9,0.2,0],[0.5,0,0],[0.995,0.63,0],[0.72,0.99,0],[0.5,1,0],[0.28,0.99,0]];shape=mxgraph.kubernetes.icon;prIcon=api;labelPosition=center;verticalLabelPosition=top;align=center;verticalAlign=bottom;fontSize=16;" parent="1" vertex="1">
+          <mxGeometry x="395" y="156" width="100" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="FNS54GikTaBBTmz5pJ7u-5" value="Database" style="aspect=fixed;perimeter=ellipsePerimeter;html=1;align=center;shadow=0;dashed=0;spacingTop=3;image;image=img/lib/active_directory/database.svg;fontSize=16;" parent="1" vertex="1">
+          <mxGeometry x="615" y="246" width="135.14" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="FNS54GikTaBBTmz5pJ7u-19" value="Frontend App" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=16;image=img/lib/mscae/CustomDomain.svg;" parent="1" vertex="1">
+          <mxGeometry x="75" y="286" width="119.05" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="FNS54GikTaBBTmz5pJ7u-20" value="Picture Storage" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn4.iconfinder.com/data/icons/twitter-28/512/159_Twitter_Image_Picture-128.png;fontSize=16;" parent="1" vertex="1">
+          <mxGeometry x="395" y="326" width="100" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="FNS54GikTaBBTmz5pJ7u-25" value="URL: http://api:8080&lt;br&gt;Metadata: $URL + &quot;/&quot;&lt;br style=&quot;font-size: 14px&quot;&gt;Food Info: $URL + &quot;/?data&quot;" style="endArrow=classic;html=1;fontFamily=Tahoma;fontSize=14;entryX=0.005;entryY=0.63;entryDx=0;entryDy=0;entryPerimeter=0;strokeWidth=2;fillColor=#b1ddf0;strokeColor=#10739e;" parent="1" source="FNS54GikTaBBTmz5pJ7u-19" target="FNS54GikTaBBTmz5pJ7u-4" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="155" y="506" as="sourcePoint"/>
+            <mxPoint x="155" y="646" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FNS54GikTaBBTmz5pJ7u-27" value="Food Image" style="endArrow=classic;html=1;fontFamily=Tahoma;fontSize=14;strokeWidth=2;fillColor=#b1ddf0;strokeColor=#10739e;" parent="1" source="FNS54GikTaBBTmz5pJ7u-19" target="FNS54GikTaBBTmz5pJ7u-20" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="494.5" y="299" as="sourcePoint"/>
+            <mxPoint x="655.1997009458439" y="289.8412889811581" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
