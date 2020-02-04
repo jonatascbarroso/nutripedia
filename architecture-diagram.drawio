@@ -1,4 +1,4 @@
-<mxfile host="www.draw.io" modified="2020-02-04T13:17:11.148Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.117 Safari/537.36" etag="OTIUMiwDwoujw9UXQCiR" version="12.6.5" type="github">
+<mxfile host="www.draw.io" modified="2020-02-04T13:19:10.698Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.117 Safari/537.36" etag="fJD_BrRVkhKnmax2vlqq" version="12.6.5" type="github">
   <diagram id="UUcm2tSYFJlV1EVi0rPY" name="Page-1">
     <mxGraphModel dx="1422" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="583" math="0" shadow="0">
       <root>
@@ -13,7 +13,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="FNS54GikTaBBTmz5pJ7u-4" value="Backend App and Rest API" style="html=1;dashed=0;whitespace=wrap;fillColor=#2875E2;strokeColor=#ffffff;points=[[0.005,0.63,0],[0.1,0.2,0],[0.9,0.2,0],[0.5,0,0],[0.995,0.63,0],[0.72,0.99,0],[0.5,1,0],[0.28,0.99,0]];shape=mxgraph.kubernetes.icon;prIcon=api;labelPosition=center;verticalLabelPosition=top;align=center;verticalAlign=bottom;fontSize=16;" parent="1" vertex="1">
-          <mxGeometry x="395" y="156" width="100" height="100" as="geometry"/>
+          <mxGeometry x="380" y="120" width="100" height="100" as="geometry"/>
         </mxCell>
         <mxCell id="FNS54GikTaBBTmz5pJ7u-5" value="Database" style="aspect=fixed;perimeter=ellipsePerimeter;html=1;align=center;shadow=0;dashed=0;spacingTop=3;image;image=img/lib/active_directory/database.svg;fontSize=16;" parent="1" vertex="1">
           <mxGeometry x="615" y="246" width="135.14" height="100" as="geometry"/>
@@ -22,7 +22,7 @@
           <mxGeometry x="75" y="286" width="119.05" height="100" as="geometry"/>
         </mxCell>
         <mxCell id="FNS54GikTaBBTmz5pJ7u-20" value="Picture Storage" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn4.iconfinder.com/data/icons/twitter-28/512/159_Twitter_Image_Picture-128.png;fontSize=16;" parent="1" vertex="1">
-          <mxGeometry x="395" y="326" width="100" height="100" as="geometry"/>
+          <mxGeometry x="380" y="360" width="100" height="100" as="geometry"/>
         </mxCell>
         <mxCell id="FNS54GikTaBBTmz5pJ7u-25" value="URL: http://api:8080&lt;br&gt;Metadata: $URL + &quot;/&quot;&lt;br style=&quot;font-size: 14px&quot;&gt;Food Info: $URL + &quot;/?data&quot;" style="endArrow=classic;html=1;fontFamily=Tahoma;fontSize=14;entryX=0.005;entryY=0.63;entryDx=0;entryDy=0;entryPerimeter=0;strokeWidth=2;fillColor=#b1ddf0;strokeColor=#10739e;" parent="1" source="FNS54GikTaBBTmz5pJ7u-19" target="FNS54GikTaBBTmz5pJ7u-4" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
